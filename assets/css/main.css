@@ -1,0 +1,92 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+html {
+  font-size: 16px;
+}
+
+html,
+body {
+  margin: 0 auto;
+}
+
+section {
+  width: 100%;
+  background-color: orangered;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section #clockCircle {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 5px solid white;
+  position: relative;
+}
+
+section #clockCircle #centerDot {
+  position: absolute;
+  background-color: #fff;
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 100;
+}
+
+section #clockCircle #hoursArrow {
+  position: absolute;
+  width: 80px;
+  height: 5px;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-100%, -50%) rotate(90deg);
+          transform: translate(-100%, -50%) rotate(90deg);
+  -webkit-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
+}
+
+section #clockCircle #minutesArrow {
+  position: absolute;
+  width: 100px;
+  height: 5px;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-100%, -50%) rotate(90deg);
+          transform: translate(-100%, -50%) rotate(90deg);
+  -webkit-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
+}
+
+section #clockCircle #secondsArrow {
+  position: absolute;
+  width: 120px;
+  height: 2px;
+  background-color: black;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-100%, -50%) rotate(90deg);
+          transform: translate(-100%, -50%) rotate(90deg);
+  -webkit-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
+}
+/*# sourceMappingURL=main.css.map */

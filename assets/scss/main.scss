@@ -1,0 +1,59 @@
+@import 'reset';
+
+section{
+    width: 100%;
+    background-color: orangered;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #clockCircle{
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        border: 5px solid white;
+        position: relative;
+        #centerDot{
+            position: absolute;
+            background-color: #fff;
+            width: 10px;
+            height: 10px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border-radius: 50%;
+            z-index: 100;
+        }
+        #hoursArrow{
+            position: absolute;
+            width: 80px;
+            height: 5px;
+            background-color: #fff;
+            top: 50%;
+            left: 50%;
+            transform: translate(-100%,-50%) rotate(90deg);
+            transform-origin: 100% 50%; 
+        }
+        #minutesArrow{
+            position: absolute;
+            width: 100px;
+            height: 5px;
+            background-color: #fff;
+            top: 50%;
+            left: 50%;
+            transform: translate(-100%,-50%) rotate(90deg);
+            transform-origin: 100% 50%;           
+        }
+        #secondsArrow{
+            position: absolute;
+            width: 120px;
+            height: 2px;
+            background-color: black;
+            top: 50%;
+            left: 50%;
+            transform: translate(-100%,-50%) rotate(90deg);
+            transform-origin: 100% 50%;
+            // transition: all 1s linear;
+        }
+    }
+}
